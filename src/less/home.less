@@ -1,50 +1,74 @@
+html{
+    font-size: 50px; 
+}
+@media only screen and (min-width: 360px){
+    html {
+        font-size: 56.25px !important;
+    }
+}
+@media only screen and (min-width: 375px){
+    html {
+        font-size: 58.59px !important;
+    }
+}
+@media only screen and (min-width: 412px){
+    html {
+        font-size: 64.375px !important; 
+    }
+}
+body{
+    font-family: "微软雅黑";
+}
 //固定顶部
+#content{
+    width: 6.4rem;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
 .fix-top{
-    width: 100%;
+    width: 6.4rem;
     position: fixed;
     top:0;
 }
-//页面头部------------------------logp+登录+退出
+//页面头部------------------------logo+登录+退出
 .head{
-    width: 100%;
-    height:40px;
-    line-height: 40px;
+    height:0.8rem;
+    line-height: 0.8rem;
     background-color: #253655;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-size: 0.22rem;
     .logo{
         display: inline-block;
-        width: 60%;
+        width: 3.6rem;
     }
     .user-name{
-        height: 100%;
-        width: 16%;
         color: #cfe7fd;
         img{
             height: 18px;
         }
     }
     .exit{
-        width: 16%;
         color: #cfe7fd;
     }
 }
 //全部文件搜索区---------------全部文件+搜索+排序
 .operating-space{
-    width: 100%;
     clear: both;
-    height: 42px;
+    height: 0.82rem;
     border-bottom: 1px solid #b3bace;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    font-size: 0.22rem;
     background-color: #dee9ef;
     a{
         color: #1b1b1b;
     }
     .all-file{
-        width: 18%;
-        height: 42px;
-        line-height: 42px;
+        width: 1.2rem;
+        height: 0.82rem;
+        line-height: 0.82rem;
         .drop{
             transform: rotate(90deg);
             -ms-transform:rotate(90deg); 	/* IE 9 */
@@ -56,37 +80,38 @@
     }
     .search{
         display: inline-block;
-        width:68%;
+        width:4.2rem;
         text-align: center;
         .search-input{
-            width: 70%;
-            height: 22px;
-            line-height: 22px;
+            width: 2.8rem;
+            height: 0.42rem;
+            line-height: 0.42rem;
             border-radius: 4px;
             border: 0;
-            padding-left: 22px;
+            padding-left: 0.42rem;
             background: url("../images/home/search.png") no-repeat 6px center;
-            background-size: 16px;
+            background-size: 0.3rem;
             background-color: #ffffff;
         }
     }
     .order{
-        width: 10%;
+        width: 1.2rem;
         text-align: center;
     }
 }
 //栏目导航区--------------全部+文档+视频。。。。。
 .column{
-    padding-left: 14px;
-    padding-right: 14px;
-    height: 40px;
-    line-height: 40px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
     border-bottom: 1px solid #b3bace;
     background-color: #ffffff;
     margin: 0;
+    font-size: 0.22rem;
     li{
         display: inline-block;
-        width: 15%;
+        width: 0.9rem;
         text-align: center;
         a{
             color:#717a8a;
@@ -95,94 +120,104 @@
 }
 //子导航----------------全部文件，选中
 .subnav{
-    height: 30px;
-    line-height:30px;
+    height: 0.6rem;
+    line-height:0.6rem;
     border-bottom: 1px solid #ececec;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     background-color: #ffffff;
+    font-size: 0.2rem;
     input{
         vertical-align: middle;
     }
 }
 //列表---------------------------文件列表
+#list-scroll{
+    height: 6.58rem;
+    margin-top: 4rem;
+    overflow-y: scroll;
+}
 .contain{
+    font-size: 0.2rem;
+    overflow:visible;   
     .list{
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
         input{
             vertical-align: middle;
         }
         .file-check{
-            height:56px;
-            line-height:56px;
+            height:1.11rem;
+            line-height:1.11rem;
             .extension-img{
-                margin-left: 8px;
+                margin-left: 0.18rem;
             }
         }
         .info{
-            margin-left: 8px;
-            width:70%;
+            margin-left: 0.18rem;
+            width:3.8rem;
             p{
                 margin: 0;
-                line-height: 28px;
+                line-height: 0.6rem;
             }
         }
         .list1{
-            height: 56px;
+            height:1.11rem;
         }
         .list2{
             clear: both;
-            height: 56px;
+            height:1.11rem;
         }
         .list3{
             clear: both;
-            height: 56px;
+            height:1.11rem;
         }
         .dropdown-box{
-            height: 56px;
-            line-height: 56px;
+            height: 1.11rem;
+            line-height: 1.11rem;
             .dropdown{
-                height: 10px;
+                height: 0.2rem;
             }
         }
     }
 }
 //底部---------------------------文件+添加+传输列表
 .footer{
-    width: 100%;
-    height:46px;
+    width: 6.4rem;
+    height:0.9rem;
     background-color:#44597f;
     position: fixed;
     bottom: 0px;
-    a{
-        display: inline-block;
-        width: 32%;
-        height: 46px;
+    font-size: 0.2rem;
+    div{
+        width: 2.06rem;
+        height: 0.9rem;
         text-align: center;
-        position: relative;
-        vertical-align: top;
+        float: left;
+        img{
+            vertical-align: top;
+        }
         p{
             margin: 0;
             color:#afc5db;
-            font-size: 12px;
+            font-size: 0.22rem;
         }
     }
     .dir-file{
-        padding-top: 5px;
+        padding-top: 0.1rem;
         img{
-            width: 20px;
-            height: 20px;
+            width: 0.4rem;
+            height: 0.4rem;
         }
     }
     .add{
-        line-height: 46px;
+        padding-top: 0.12rem;
     }
     .trans{
-        padding-top: 5px;
+        padding-top: 0.1rem;
         img{
-            width: 20px;
-            height: 20px;
+            width: 0.4rem;
+            height: 0.4rem;
         }
     }
 }
