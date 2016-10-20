@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Tahoma, Arial, Roboto, "Droid San", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+html {
+  font-size: 12px;
+}
+/*# sourceMappingURL=common.css.map */
